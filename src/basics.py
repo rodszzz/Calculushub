@@ -1,20 +1,30 @@
 # lembrar de substituir tudo por loops
+text = ["SOMA FODA", "MULTIPLICAÇÃO FODA"]
+nsoma = []
+nmulti = []
+
 def soma():
-    print("="*5, " SOMA FODA ", "="*5)
+    print("-"*25)
+    print(f"{text[0]:^25}")
+    print("-"*25, "\n")
 
-    v1 = int(input("primeiro valor: "))
-    v2 = int(input("segundo valor: "))
+    qnt = int(input("Quantos numeros vc quer somar? "))
 
-    s = v1 + v2
+    for i in range(0, qnt):
+        nsoma.append(float(input(f"{i+1} valor: ")))
 
-    print(f"O valor da soma entre {v1} e {v2} eh igual a: {s}")
+    somafoda = sum(nsoma)
+    print(f"A soma de todos os valores é {somafoda}")
+    nsoma.clear()
 
 def multi():
-    print("="*5, " MULTIPLICAÇÃO FODA ", "="*5)
+    print("="*25)
+    print(f"{text[1]:^25}")
+    print("="*25, "\n")
 
-    m1 = int(input("primeiro valor: "))
-    m2 = int(input("segundo valor: "))
+    m1 = float(input("primeiro valor: "))
+    m2 = float(input("segundo valor: "))
 
     r = m1 * m2
 
-    print(f"O valor da multiplicação entre {m1} e {m2} eh igual a {r}")
+    print(f"O resultado da multiplicação entre {m1} e {m2} é igual a {r}")
