@@ -1,7 +1,7 @@
 # lembrar de substituir tudo por loops
-text = ["SOMA FODA", "MULTIPLICAÇÃO FODA"]
+import math
+text = ["SOMA FODA", "MULTIPLICAÇÃO FODA", "RAIZ NÃO REDONDA"]
 nsoma = []
-nmulti = []
 
 def soma():
     print("-"*25)
@@ -25,6 +25,16 @@ def multi():
     m1 = float(input("primeiro valor: "))
     m2 = float(input("segundo valor: "))
 
-    r = m1 * m2
+    resul = m1 * m2
 
-    print(f"O resultado da multiplicação entre {m1} e {m2} é igual a {r}")
+    print(f"O resultado da multiplicação entre {m1} e {m2} é igual a {resul}")
+
+def raiz():
+    print("="*25)
+    print(f"{text[2]:^25}")
+    print("="*25)
+
+    num = float(input("digite o valor a ser calculada a raiz quadrada: "))
+    resul = math.sqrt(num)
+
+    print(f"A raiz quadrada de {num} eh {resul}")

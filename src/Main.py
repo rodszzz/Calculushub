@@ -1,16 +1,17 @@
-from basics import soma, multi
-lista = ["[0] soma", "[1] multiplicação"]
-funcs = [soma, multi]
+import emoji
+from basics import soma, multi, raiz
+lista = ["[0] soma", "[1] multiplicação", "[2] raiz quadrada"]
+funcs = [soma, multi, raiz]
 # listas com todas funções de cálculo
 
-print("Bem vindo ao Calculushub!")
+print(emoji.emojize("Bem vindo ao Calculushub! :party_popper:"))
 
 while True:
-    print("Suas opções de contas são essas:")
+    print("Suas opções de contas são essas:\n")
     for p in range(0, len(lista)):
         print(lista[p])
-    escolha = int(input(f"Deseja fazer qual operação? "))
-    if escolha >= 2:
+    escolha = int(input(f"\nDeseja fazer qual operação? "))
+    if escolha >= 3:
         while True:
             print("Opa! Esse número está fora do meu alcance!\nTente de novo, por favor")
             print("Suas opções de contas são essas:")
