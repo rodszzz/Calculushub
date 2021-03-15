@@ -1,6 +1,6 @@
 # lembrar de substituir tudo por loops
 import math
-text = ["SOMA FODA", "MULTIPLICAÇÃO FODA", "RAIZ NÃO REDONDA"]
+text = ["SOMA FODA", "DIVISÃO FODA", "MULTIPLICAÇÃO FODA", "RAIZ NÃO REDONDA"]
 nsoma = []
 
 def soma():
@@ -17,9 +17,20 @@ def soma():
     print(f"A soma de todos os valores é {somafoda}")
     nsoma.clear()
 
+def divid():
+    print("-"*25)
+    print(f"{text[1]:^25}")
+    print("-"*25)
+
+    dividendo = float(input("Coloque aqui o dividendo: "))
+    divisor = float(input("Coloque aqui o divisor: "))
+    resul = dividendo / divisor
+
+    print(f"O resultado da divisao enre {dividendo} e {divisor} eh {resul}")
+
 def multi():
     print("="*25)
-    print(f"{text[1]:^25}")
+    print(f"{text[2]:^25}")
     print("="*25, "\n")
 
     m1 = float(input("primeiro valor: "))
