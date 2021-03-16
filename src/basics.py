@@ -14,7 +14,7 @@ def soma():
         nsoma.append(float(input(f"{i+1} valor: ")))
 
     somafoda = sum(nsoma)
-    print(f"A soma de todos os valores é {somafoda}")
+    print(f"A soma de todos os valores é {somafoda}\n")
     nsoma.clear()
 
 def divid():
@@ -26,7 +26,7 @@ def divid():
     divisor = float(input("Coloque aqui o divisor: "))
     resul = dividendo / divisor
 
-    print(f"O resultado da divisao enre {dividendo} e {divisor} eh {resul}")
+    print(f"O resultado da divisao enre {dividendo} e {divisor} eh {resul}\n")
 
 def multi():
     print("="*25)
@@ -38,7 +38,7 @@ def multi():
 
     resul = m1 * m2
 
-    print(f"O resultado da multiplicação entre {m1} e {m2} é igual a {resul}")
+    print(f"O resultado da multiplicação entre {m1} e {m2} é igual a {resul}\n")
 
 def raiz():
     print("="*25)
@@ -48,4 +48,4 @@ def raiz():
     num = float(input("digite o valor a ser calculada a raiz quadrada: "))
     resul = math.sqrt(num)
 
-    print(f"A raiz quadrada de {num} eh {resul}")
+    print(f"A raiz quadrada de {num} eh {resul}\n")
