@@ -22,7 +22,7 @@ while True:
                 break
     funcs[escolha]()
     while True:
-        cont = input("Deseja continuar? [S/n] ").strip().upper()
+        cont = input("Deseja continuar? [S/n] ").strip().upper()[0]
         if cont in 'SN':
             break
             print("Opção inválida! Tente novamente ")

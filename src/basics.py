@@ -20,7 +20,7 @@ def soma():
 def divid():
     print("-"*25)
     print(f"{text[1]:^25}")
-    print("-"*25)
+    print("-"*25, "\n")
 
     dividendo = float(input("Coloque aqui o dividendo: "))
     divisor = float(input("Coloque aqui o divisor: "))
@@ -42,8 +42,8 @@ def multi():
 
 def raiz():
     print("="*25)
-    print(f"{text[2]:^25}")
-    print("="*25)
+    print(f"{text[3]:^25}")
+    print("="*25, "\n")
 
     num = float(input("digite o valor a ser calculada a raiz quadrada: "))
     resul = math.sqrt(num)
