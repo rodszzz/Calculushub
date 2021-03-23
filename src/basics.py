@@ -1,9 +1,10 @@
-# lembrar de substituir tudo por loops
+# lembrar de substituir tudo o que precisar loops
 import math
 text = ["SOMA FODA", "DIVISÃO FODA", "MULTIPLICAÇÃO FODA", "RAIZ NÃO REDONDA"]
-nsoma = []
 
 def soma():
+    nsoma = []
+
     print("-"*25)
     print(f"{text[0]:^25}")
     print("-"*25, "\n")
@@ -29,16 +30,25 @@ def divid():
     print(f"O resultado da divisao enre {dividendo} e {divisor} eh {resul}\n")
 
 def multi():
+    nmulti = []
+    produto = 1
+
     print("="*25)
     print(f"{text[2]:^25}")
     print("="*25, "\n")
 
-    m1 = float(input("primeiro valor: "))
-    m2 = float(input("segundo valor: "))
+    qnt = int(input("Quantos números vc quer multiplicar? "))
 
-    resul = m1 * m2
+    for n in range(qnt):
+        nmulti.append(float(input(f"Coloque o {n+1} valor: ")))
 
-    print(f"O resultado da multiplicação entre {m1} e {m2} é igual a {resul}\n")
+    for item in nmulti:
+        produto = produto * item
+
+# se nao der certo poe uma var pra ser o segundo numero que vai trocando ate o n ser o ultimo valor aew da certo tbm :)
+
+    print(f"O resultado da multiplicação é: {produto}")
+    nmulti.clear()
 
 def raiz():
     print("="*25)
