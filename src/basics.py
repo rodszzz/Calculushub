@@ -1,13 +1,12 @@
-# lembrar de substituir tudo o que precisar loops
 import math
 text = ["SOMA FODA", "DIVISÃO FODA", "MULTIPLICAÇÃO FODA", "RAIZ NÃO REDONDA"]
 
 def soma():
     nsoma = []
 
-    print("-"*25)
+    print("="*25)
     print(f"{text[0]:^25}")
-    print("-"*25, "\n")
+    print("="*25, "\n")
 
     qnt = int(input("Quantos numeros vc quer somar? "))
 
@@ -15,19 +14,21 @@ def soma():
         nsoma.append(float(input(f"{i+1} valor: ")))
 
     somafoda = sum(nsoma)
-    print(f"A soma de todos os valores é {somafoda}\n")
+    print(f"A soma de todos os valores é {somafoda}")
+    print("<", "-"*40, ">", "\n")
     nsoma.clear()
 
 def divid():
-    print("-"*25)
+    print("="*25)
     print(f"{text[1]:^25}")
-    print("-"*25, "\n")
+    print("="*25, "\n")
 
     dividendo = float(input("Coloque aqui o dividendo: "))
     divisor = float(input("Coloque aqui o divisor: "))
     resul = dividendo / divisor
 
-    print(f"O resultado da divisao enre {dividendo} e {divisor} eh {resul}\n")
+    print(f"O resultado da divisao enre {dividendo} e {divisor} eh {resul}")
+    print("<", "-"*40, ">","\n")
 
 def multi():
     nmulti = []
@@ -45,17 +46,27 @@ def multi():
     for item in nmulti:
         produto = produto * item
 
-# se nao der certo poe uma var pra ser o segundo numero que vai trocando ate o n ser o ultimo valor aew da certo tbm :)
-
     print(f"O resultado da multiplicação é: {produto}")
+    print("<", "-"*40, ">", "\n")
     nmulti.clear()
 
 def raiz():
+    nraiz = []
+    resul = []
     print("="*25)
     print(f"{text[3]:^25}")
     print("="*25, "\n")
 
-    num = float(input("digite o valor a ser calculada a raiz quadrada: "))
-    resul = math.sqrt(num)
+    qnt = int(input("Vc quer saber a raiz de quantos numeros? "))
 
-    print(f"A raiz quadrada de {num} eh {resul}\n")
+    for v in range(qnt):
+        nraiz.append(float(input(f"Coloque o {v+1} numero: ")))
+
+    for n in nraiz:
+        cal = math.sqrt(n)
+        resul.append(cal)
+
+    print()
+    for item in range(qnt):
+        print(f"A raiz quadrada de {nraiz[item]} é {resul[item]}")
+    print("<", "-"*40, ">", "\n")

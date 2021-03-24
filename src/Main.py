@@ -11,6 +11,7 @@ while True:
     for p in range(0, len(lista)):
         print(lista[p])
     escolha = int(input(f"\nDeseja fazer qual operação? "))
+    print()
     if escolha >= 4:
         while True:
             print("Opa! Esse número está fora do meu alcance!\nTente de novo, por favor")
