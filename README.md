@@ -7,7 +7,7 @@ Vc so vai precisar por os valores e então o programa fará as contas pra você.
 - Vídeo de exemplo:
 
 
-![calculus2](https://user-images.githubusercontent.com/77214080/111382729-18845f00-8686-11eb-916d-309ad1ad8241.gif)
+![calculus3](https://user-images.githubusercontent.com/77214080/112247956-e5b50a80-8c33-11eb-8626-5d85dee95646.gif)
 
 ## Funcionamento
 Ainda em fase de construção...
