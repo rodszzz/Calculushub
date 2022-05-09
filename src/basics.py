@@ -27,7 +27,7 @@ def divid():
     divisor = float(input("Coloque aqui o divisor: "))
     resul = dividendo / divisor
 
-    print(f"O resultado da divisao enre {dividendo} e {divisor} eh {resul}")
+    print(f"O resultado da divisao entre {dividendo} e {divisor} eh {resul}")
     print("<", "-"*40, ">","\n")
 
 def multi():

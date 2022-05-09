@@ -1,8 +1,9 @@
 import emoji
 from basics import soma, divid, multi, raiz
-lista = ["[0] soma","[1] divisao", "[2] multiplicação", "[3] raiz quadrada"]
-funcs = [soma, divid, multi, raiz]
+
 # listas com todas funções de cálculo
+lista = ["[0] soma", "[1] divisao", "[2] multiplicação", "[3] raiz quadrada"]
+funcs = [soma, divid, multi, raiz]
 
 print(emoji.emojize("Bem vindo ao Calculushub! :party_popper:"))
 
@@ -14,7 +15,7 @@ while True:
     print()
     if escolha >= 4:
         while True:
-            print("Opa! Esse número está fora do meu alcance!\nTente de novo, por favor")
+            print("Opa! Esse número está fora do meu alcance!\nTente de novo, por favor\n")
             print("Suas opções de contas são essas:")
             for p in range(0, len(lista)):
                 print(lista[p])
@@ -23,10 +24,10 @@ while True:
                 break
     funcs[escolha]()
     while True:
-        cont = input("Deseja fazer mais cálculos? [S/n] ").strip().upper()[0]
+        cont = input("Deseja fazer mais cálculos? [Sim/não] ").strip().upper()[0]
         if cont in 'SN':
             break
-            print("Opção inválida! Tente novamente ")
+        print("Opção inválida! Tente novamente.")
     if cont == 'N':
         print("<<< Volte sempre! >>>")
         break
